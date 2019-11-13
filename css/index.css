@@ -1,6 +1,5 @@
 /* Main Primary color */
-/* Main Secondary color (1) */
-/* Main Secondary color (2) */
+/* Main Primary color */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -128,4 +127,61 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+body {
+  background: #ae6f3e;
+}
+.main {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.main .container-h {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  justify-items: stretch;
+  height: 15vh;
+  flex-direction: row;
+}
+.main .container-h .product-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  justify-items: stretch;
+  height: 10vh;
+  flex-direction: row;
+}
+.main .container-h .product-header .h-button {
+  border-radius: 12px;
+}
+.main .container-h .product-header .logo {
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  width: 25%;
+  margin-top: 3%;
+}
+.main .main-content {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  transform-style: preserve-3d;
+  flex-wrap: wrap;
+  margin-top: 3%;
+  justify-content: space-around;
+  flex-basis: fit-content;
+  align-self: center;
+}
+.main .main-content .panels {
+  display: flex;
+  position: relative;
+  width: 20%;
+  height: 25%;
+  margin: 5px;
+  border-radius: 12px;
+  background: #e6d9c7;
+  transition: all 5s ease-in-out;
 }

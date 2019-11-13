@@ -1,0 +1,56 @@
+/* Main Primary color */
+/* Main Primary color */
+.main {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.main .container-h {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  justify-items: stretch;
+  height: 15vh;
+  flex-direction: row;
+}
+.main .container-h .product-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  justify-items: stretch;
+  height: 10vh;
+  flex-direction: row;
+}
+.main .container-h .product-header .h-button {
+  border-radius: 12px;
+}
+.main .container-h .product-header .logo {
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  width: 25%;
+  margin-top: 3%;
+}
+.main .main-content {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  transform-style: preserve-3d;
+  flex-wrap: wrap;
+  margin-top: 3%;
+  justify-content: space-around;
+  flex-basis: fit-content;
+  align-self: center;
+}
+.main .main-content .panels {
+  display: flex;
+  position: relative;
+  width: 20%;
+  height: 25%;
+  margin: 5px;
+  border-radius: 12px;
+  background: #e6d9c7;
+  transition: all 5s ease-in-out;
+}
