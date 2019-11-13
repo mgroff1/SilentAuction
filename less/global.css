@@ -1,5 +1,11 @@
 /* Main Primary color */
-/* Main Primary color */
+/* secondary */
+* {
+  overflow: hidden;
+}
 body {
-  background: #ae6f3e;
+  position: absolue;
+  display: block;
+  height: auto;
+  width: 100vw;
 }

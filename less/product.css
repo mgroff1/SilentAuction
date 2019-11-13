@@ -1,56 +1,72 @@
 /* Main Primary color */
-/* Main Primary color */
+/* secondary */
 .main {
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: linear-gradient(90deg, #854819, #d99e71, #ae6f3e, #c1ae96, #854819, #d99e71);
 }
 .main .container-h {
-  display: flex;
+  background: #854819;
+  padding-top: 1%;
   width: 100%;
-  justify-content: space-between;
-  justify-items: stretch;
-  height: 15vh;
-  flex-direction: row;
 }
 .main .container-h .product-header {
   display: flex;
   width: 100%;
+  padding: 1%;
   justify-content: space-around;
   justify-items: stretch;
-  height: 10vh;
+  height: 5vh;
   flex-direction: row;
 }
 .main .container-h .product-header .h-button {
   border-radius: 12px;
 }
+.main .container-h .product-header .h-button span .expand {
+  background: black;
+  width: 10vw;
+  height: 10vh;
+  background: #a08b6e;
+}
 .main .container-h .product-header .logo {
-  display: flex;
-  justify-content: center;
-  justify-self: center;
-  width: 25%;
-  margin-top: 3%;
+  background: #7a6549;
 }
 .main .main-content {
-  width: 80%;
-  height: 100%;
+  width: 80vw;
+  height: 90%;
   display: flex;
-  transform-style: preserve-3d;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin-top: 3%;
-  justify-content: space-around;
-  flex-basis: fit-content;
+  justify-content: flex-start;
+  background-size: contain;
   align-self: center;
 }
-.main .main-content .panels {
-  display: flex;
+.main .main-content .line-1 {
+  margin-top: 5vh;
+  display: grid;
   position: relative;
-  width: 20%;
-  height: 25%;
+  grid-template-areas: ;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-content: stretch;
+  grid-gap: 3px;
+  overflow-x: scroll;
+}
+.main .main-content .line-1 .panels {
+  min-width: 15vw;
+  height: 25vh;
   margin: 5px;
   border-radius: 12px;
   background: #e6d9c7;
-  transition: all 5s ease-in-out;
+}
+.main .footer {
+  position: relative;
+  margin: 5%;
+  width: 100%;
+  height: 5vh;
+  background: #7a6549;
 }
