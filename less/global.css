@@ -9,3 +9,6 @@ body {
   height: auto;
   width: 100vw;
 }
+::-webkit-scrollbar {
+  background: #d99e71;
+}

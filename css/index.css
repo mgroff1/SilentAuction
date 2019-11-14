@@ -137,6 +137,9 @@ body {
   height: auto;
   width: 100vw;
 }
+::-webkit-scrollbar {
+  background: #d99e71;
+}
 .main {
   position: absolute;
   width: 100vw;
@@ -181,6 +184,7 @@ body {
   justify-content: flex-start;
   background-size: contain;
   align-self: center;
+  box-shadow: 3px 2px 2px 2px #5a2802, -3px -2px 2px 2px #854819;
 }
 .main .main-content .line-1 {
   margin-top: 5vh;
@@ -194,11 +198,22 @@ body {
   overflow-x: scroll;
 }
 .main .main-content .line-1 .panels {
+  margin-left: 5%;
+  margin-top: 5%;
   min-width: 15vw;
   height: 25vh;
-  margin: 5px;
   border-radius: 12px;
-  background: #e6d9c7;
+  border: 4px ridge #d99e71;
+  background: #a08b6e;
+  transition: all 0.25s ease-in-out;
+}
+.main .main-content .line-1 .panels:hover {
+  margin-left: 10%;
+  min-width: 14vw;
+  height: 23vh;
+  transition: all 0.25s ease-in-out;
+  transform: scale(1.15);
+  border: 4px ridge white;
 }
 .main .footer {
   position: relative;

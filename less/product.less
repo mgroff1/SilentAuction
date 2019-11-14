@@ -67,7 +67,7 @@
         justify-content: flex-start;
         background-size:contain;
         align-self:center;
-        
+        box-shadow:3px 2px 2px 2px @rgba-primary-4, -3px -2px 2px 2px @rgba-primary-3;
         .line-1{
             margin-top:5vh;
             display: grid;
@@ -77,18 +77,26 @@
             grid-template-rows: 1fr 1fr;
             align-content: stretch;
             grid-gap:3px;
+            
             overflow-x:scroll;
         .panels {
-          
+          margin-left:5%;
+          margin-top:5%;
            min-width:15vw;
             height:25vh;
-            margin:5px;
+            // margin:5px;
             border-radius:12px;
-            background:@rgba-secondary-2;
-            // transition:all 5s ease-in-out;
-
-            img {}
-
+            border:4px ridge @rgba-primary-2;
+            background:@rgba-secondary-3;
+            transition:all .25s ease-in-out;
+        }
+        .panels:hover{
+            margin-left:10%;
+            min-width:14vw;
+            height:23vh;
+            transition:all .25s ease-in-out;
+            transform:scale(1.15);
+            border:4px ridge white;
         }
     }
 
