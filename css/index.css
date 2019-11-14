@@ -1,5 +1,5 @@
 /* Main Primary color */
-/* secondary */
+/* Main Complement color */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -138,14 +138,55 @@ body {
   width: 100vw;
 }
 ::-webkit-scrollbar {
-  background: #d99e71;
+  background: #768498;
 }
 ::-webkit-scrollbar-button {
-  background: #854819;
-  color: #854819;
+  background: #3b4e6b;
+  color: #3b4e6b;
 }
 ::-webkit-scrollbar-track {
-  background: #ae6f3e;
+  background: #54667f;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.container h1 {
+  display: flex;
+  font-size: 6rem;
+  justify-content: center;
+  margin-bottom: 5vh;
+}
+.container nav {
+  display: flex;
+}
+.container nav a {
+  display: flex;
+  margin: 2%;
+  width: 22vw;
+  height: 20vh;
+  text-decoration: none;
+  justify-content: space-evenly;
+  font-size: 3rem;
+  background-color: whitesmoke;
+  align-items: center;
+  color: black;
+  border: 1px solid black;
+}
+.container nav a:hover {
+  background-color: black;
+  color: whitesmoke;
 }
 .main {
   position: absolute;
@@ -154,10 +195,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background: linear-gradient(90deg, #854819, #d99e71, #ae6f3e, #c1ae96, #854819, #d99e71);
 }
 .main .container-h {
-  background: #854819;
+  background: #3b4e6b;
   padding-top: 1%;
   width: 100%;
 }
@@ -177,10 +217,6 @@ body {
   background: black;
   width: 10vw;
   height: 10vh;
-  background: #a08b6e;
-}
-.main .container-h .product-header .logo {
-  background: #7a6549;
 }
 .main .main-content {
   width: 80vw;
@@ -191,7 +227,7 @@ body {
   justify-content: flex-start;
   background-size: contain;
   align-self: center;
-  box-shadow: 3px 2px 2px 2px #5a2802, -3px -2px 2px 2px #854819;
+  box-shadow: 3px 2px 2px 2px #253956, -3px -2px 2px 2px #3b4e6b;
 }
 .main .main-content .line-1 {
   margin-top: 5vh;
@@ -210,8 +246,7 @@ body {
   min-width: 15vw;
   height: 25vh;
   border-radius: 12px;
-  border: 4px ridge #d99e71;
-  background: #a08b6e;
+  border: 4px ridge #768498;
   transition: all 0.25s ease-in-out;
 }
 .main .main-content .line-1 .panels:hover {
@@ -227,5 +262,4 @@ body {
   margin: 5%;
   width: 100%;
   height: 5vh;
-  background: #7a6549;
 }
