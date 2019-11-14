@@ -161,12 +161,15 @@ html {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  background-image: url("https://cdn.discordapp.com/attachments/644333219512188928/644357514607067156/auction-image.png");
 }
 .container h1 {
   display: flex;
-  font-size: 6rem;
+  font-size: 9rem;
   justify-content: center;
-  margin-bottom: 5vh;
+  padding-bottom: 10vh;
+  font-weight: bold;
+  color: #1e27ac;
 }
 .container nav {
   display: flex;
@@ -179,7 +182,7 @@ html {
   text-decoration: none;
   justify-content: space-evenly;
   font-size: 3rem;
-  background-color: whitesmoke;
+  background-color: rgba(255, 255, 255, 0.45);
   align-items: center;
   color: black;
   border: 1px solid black;
@@ -187,6 +190,7 @@ html {
 .container nav a:hover {
   background-color: black;
   color: whitesmoke;
+  opacity: 1;
 }
 .main {
   position: absolute;
