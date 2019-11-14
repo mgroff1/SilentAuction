@@ -7,47 +7,34 @@
     width: 100vw;
     height:100%;
     display: flex;
- 
+   
     flex-wrap:wrap;
     justify-content:center;
     
 
     .container-h {
-        
-        background:@rgba-primary-3;
-        padding-top:1%;
-        height:7vh;
-        width:100%;
-      
-        .product-header {
         display:flex;
         width:100%;
-       
-        padding-bottom:1%;
         justify-content: space-around;
-
-        height:5vh;
+        height:12vh;
+       padding:5px;
+       
           .h-button{
-              height:5vh;
+            height:10vh;
             border-radius:1px;
             width:10vw;
-            height:10vh;
+            padding:5px;
+            padding:0;
+            transition:all .25s ease-in-out;
+            background:@btn-color;
           }
-            #new-list {}
-
-            #upcoming {}
-
-            .logo {
-                background:@rgba-complement-3;
-              
-       
-            
-            }
-
-            #back {}
-
-            #sign-in {}
-        }
+          .h-button:hover{
+            transition:all .25s ease-in-out;
+            transform:scale(1.05);
+            border:4px ridge white;
+          }
+         
+        
     }
 
     .main-content {
@@ -70,7 +57,10 @@
             grid-template-rows: 1fr 1fr;
             align-content: stretch;
             grid-gap:3px;
-            background:url(../images/gavel.png);
+        
+            background-repeat: no-repeat;
+            background-size:cover;
+         
             overflow-x:scroll;
         .panels {
           margin:5%;
@@ -79,10 +69,11 @@
             // margin:5px;
             border-radius:12px;
             border:4px ridge @rgba-primary-2;
-            background:transparent;
+            background:@panel-color;
             transition:all .25s ease-in-out;
-            background-size:cover;
+            background-size:contain;
             background-repeat:no-repeat;
+            background:url(../images/br.png);
         }
         .panels:hover{
             margin-left:10%;

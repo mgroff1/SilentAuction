@@ -1,4 +1,12 @@
 
+$(document).ready(function () {
+    if (!$.browser.webkit) {
+        $('.wrapper').html('<p>Sorry! Non webkit users. :(</p>');
+    }
+});
+
+
+
 function open(){
     $('.slide').hide("fade",200);
 $('#cover').show( "slide", { direction: "up"  }, 500 );
