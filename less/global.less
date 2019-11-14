@@ -6,15 +6,20 @@
     overflow:hidden;
 }
 body{
+    
     position:absolue;
     display:block;
     height:auto;
     width:100vw;
+    background:url('https://cdn.discordapp.com/attachments/644333219512188928/644357514607067156/auction-image.png');
+
+  
 }
 
 ::-webkit-scrollbar{
     background:@rgba-primary-2;
-  
+    width:20px;
+    height:25px;
 }
 ::-webkit-scrollbar-button{
     background:@rgba-primary-3;
@@ -23,4 +28,17 @@ body{
 
 ::-webkit-scrollbar-track{
     background:@rgba-primary-0;
+}
+
+::-webkit-scrollbar-thumb{
+    background:@rgba-primary-4;
+}
+
+button{
+    background:@rgba-primary-2;
+    padding:5px;
+
+    text-shadow:(@text-shadow);
+    font-size:1.3rem;
+    
 }

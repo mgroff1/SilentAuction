@@ -1,5 +1,5 @@
 /* Main Primary color */
-/* secondary */
+/* Main Complement color */
 * {
   overflow: hidden;
 }
@@ -8,14 +8,26 @@ body {
   display: block;
   height: auto;
   width: 100vw;
+  background: url('https://cdn.discordapp.com/attachments/644333219512188928/644357514607067156/auction-image.png');
 }
 ::-webkit-scrollbar {
-  background: #d99e71;
+  background: #768498;
+  width: 20px;
+  height: 25px;
 }
 ::-webkit-scrollbar-button {
-  background: #854819;
-  color: #854819;
+  background: #3b4e6b;
+  color: #3b4e6b;
 }
 ::-webkit-scrollbar-track {
-  background: #ae6f3e;
+  background: #54667f;
+}
+::-webkit-scrollbar-thumb {
+  background: #253956;
+}
+button {
+  background: #768498;
+  padding: 5px;
+  text-shadow: 2px 1px 2px #712a46;
+  font-size: 1.3rem;
 }
